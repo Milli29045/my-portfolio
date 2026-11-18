@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   },
   description:
     "Malaika Mohsin is a Full-Stack Web Developer specializing in React.js, Next.js, Laravel, Node.js, Express.js, MongoDB, and modern web development.",
+    verification: {
+  google: "ynPNw1UdNQSdu_zf37L3FvJOP68JgrSvihqeGtVnTb8",
+},
   keywords: [
     "Malaika Mohsin",
     "Full Stack Web Developer",
@@ -37,9 +40,9 @@ export const metadata: Metadata = {
     title: "Malaika Mohsin | Full-Stack Web Developer",
     description:
       "Explore my portfolio, web development skills, services, and projects.",
-    url: "https://your-portfolio-domain.com",
+    url: "https://malaika-portfolio-milli.vercel.app/",
     siteName: "Malaika Mohsin Portfolio",
-    type: "website",
+    type: "website",  
   },
   robots: {
     index: true,
