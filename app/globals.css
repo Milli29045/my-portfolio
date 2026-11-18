@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #020817;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* LIGHT THEME */
+html.light-theme {
+  color-scheme: light;
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+html.light-theme body,
+html.light-theme main {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Navbar */
+html.light-theme main > nav {
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 4px 25px rgba(15, 23, 42, 0.08) !important;
+}
+
+html.light-theme main > nav a,
+html.light-theme main > nav a span.text-white {
+  color: #0f172a;
+}
+
+/* Hero: keep the background image, but use a light overlay */
+html.light-theme #home {
+  background-image:
+    linear-gradient(rgba(248, 250, 252, 0.88), rgba(248, 250, 252, 0.91)),
+    url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=2000&q=85") !important;
+}
+
+html.light-theme #home h1,
+html.light-theme #home p:not(.text-cyan-400) {
+  color: #0f172a;
+}
+
+/* Sections with custom dark backgrounds */
+html.light-theme #about,
+html.light-theme #contact,
+html.light-theme footer {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+/* Tailwind background utilities used by sections and cards */
+html.light-theme .bg-slate-950,
+html.light-theme .bg-slate-900,
+html.light-theme .bg-\[\#020b20\] {
+  background-color: #ffffff !important;
+}
+
+html.light-theme .bg-\[\#020817\] {
+  background-color: #f1f5f9 !important;
+}
+
+html.light-theme .bg-\[\#071832\] {
+  background-color: #ffffff !important;
+}
+
+/* Text utilities */
+html.light-theme .text-white,
+html.light-theme .text-gray-300,
+html.light-theme .text-slate-300 {
+  color: #1e293b !important;
+}
+
+html.light-theme .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.light-theme .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Borders and card surfaces */
+html.light-theme .border-slate-800,
+html.light-theme .border-slate-700 {
+  border-color: #cbd5e1 !important;
+}
+
+html.light-theme #skills .rounded-xl,
+html.light-theme #services .rounded-2xl,
+html.light-theme #projects .rounded-2xl,
+html.light-theme #contact .rounded-3xl {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+/* Contact image overlay should remain readable in light mode */
+html.light-theme #contact .absolute.inset-0 {
+  background-image: linear-gradient(to top, rgba(15, 23, 42, 0.75), transparent, transparent);
+}
+
+/* Keep gradient CTA text dark and preserve cyan accents */
+html.light-theme .text-cyan-400,
+html.light-theme .text-cyan-300 {
+  color: #0891b2 !important;
+}
+
+/* Smooth theme transition */
+html.light-theme main,
+html.light-theme main section,
+html.light-theme footer,
+html.light-theme nav {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
