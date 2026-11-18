@@ -106,21 +106,21 @@ const skills = [
 
 const services = [
   {
-    title: "Business Websites",
+    title: "Business Website Development",
     description:
-      "Modern and responsive websites to help businesses build their online presence.",
+      "Professional and responsive business websites in Shahdra, Lahore, helping local businesses build a strong online presence and attract more customers.",
     icon: "✦",
   },
   {
-    title: "School Websites",
+    title: "School Website Development",
     description:
-      "Professional educational websites for schools and institutions.",
+      "Modern educational websites for schools and institutions, featuring responsive layouts, admission information, academic details, and user-friendly designs.",
     icon: "▣",
   },
   {
-    title: "E-commerce Websites",
+    title: "E-commerce Website Development",
     description:
-      "Online shopping websites with product collections and cart functionality.",
+      "Custom e-commerce websites with product collections, shopping cart functionality, and responsive designs to help businesses sell products online.",
     icon: "🛍",
   },
 ];
@@ -263,17 +263,17 @@ export default function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="relative w-full overflow-hidden bg-[#020b20] px-6 py-12 mt-20 text-white"
+        className="relative w-full overflow-hidden bg-[#020b20] px-6 py-8 mt-12 text-white"
       >
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,#0875ff,transparent_35%),radial-gradient(circle_at_80%_70%,#063b80,transparent_35%)]" />
         </div>
 
-        <div className="relative mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2">
 
           {/* Profile Section */}
           <div className="relative flex flex-col items-center">
-            <div className="relative flex h-[300px] w-[300px] items-center justify-center rounded-full border-[5px] border-cyan-400 shadow-[0_0_35px_#00cfff] sm:h-[380px] sm:w-[380px] overflow-hidden group">
+            <div className="relative flex h-[260px] w-[260px] items-center justify-center rounded-full border-[5px] border-cyan-400 shadow-[0_0_35px_#00cfff] sm:h-[380px] sm:w-[380px] overflow-hidden group">
               <img
                 src="/profile.png"
                 alt="Malaika Mohsin"
@@ -281,7 +281,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="relative -mt-5 rounded-full border border-cyan-400 bg-[#020b20] px-8 py-4 text-center shadow-[0_0_20px_#0875ff]">
+            <div className="relative -mt-5 rounded-full border border-cyan-400 bg-[#020b20] px-6 py-3 text-center shadow-[0_0_20px_#0875ff]">
               <p className="font-bold tracking-wide text-cyan-400 text-sm">
                 FULL-STACK DEVELOPER
               </p>
@@ -298,25 +298,30 @@ export default function Home() {
               ABOUT ME
             </div>
 
-            <h2 className="text-4xl font-extrabold leading-tight sm:text-5xl">
+            <h2 className="text-3xl font-extrabold leading-tight sm:text-4xl">
               Who Am I
               <span className="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mt-1">
                 As A Developer?
               </span>
             </h2>
 
-            <div className="mt-6 border-l-4 border-cyan-400 pl-6 text-base leading-8 text-gray-300">
+            <div className="mt-4 border-l-4 border-cyan-400 pl-6 text-base leading-7 text-gray-300">
               I'm <strong className="text-white">Malaika Mohsin</strong>,
-              a passionate Full-Stack Web Developer interested in building
-              modern, responsive and user-friendly websites. I work with
-              cutting-edge technologies and love turning creative ideas
-              into powerful digital solutions.
+              a professional Full-Stack Web Developer
+  based in Shahdra, Lahore, Pakistan. I help individuals,
+  startups, and businesses build modern, responsive, and
+  user-friendly websites. My expertise includes React.js,
+  Next.js, Laravel, Node.js, Express.js, MongoDB, PHP, and
+  MySQL. I provide website design, custom web development,
+  e-commerce development, and website redesign services
+  for clients in Lahore and beyond.
             </div>
 
             <p className="mt-4 text-base leading-8 text-gray-300">
               My technology interests include React.js, Next.js, Laravel,
               Node.js, Express.js and MongoDB.
             </p>
+            
 
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="rounded-xl border border-cyan-500/50 bg-cyan-500/5 px-3 py-4 text-center transition hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(0,204,255,0.2)]">
@@ -337,7 +342,7 @@ export default function Home() {
 
             <a
               href="#skills"
-              className="mt-8 inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-8 py-3.5 text-base font-bold text-[#020b20] shadow-lg shadow-cyan-500/20 transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/40"
+              className="mt-6 inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-8 py-3.5 text-base font-bold text-[#020b20] shadow-lg shadow-cyan-500/20 transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/40"
             >
               Learn More <span className="text-xl">→</span>
             </a>
@@ -369,130 +374,195 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="bg-slate-900 px-6 py-24">
-        <div className="mx-auto max-w-6xl">
-          <p className="mb-3 font-semibold text-cyan-400">
-            WHAT I DO
-          </p>
+     
+<section
+  id="services"
+  className="bg-slate-900 px-6 py-20"
+>
+  <div className="mx-auto max-w-6xl">
+    <p className="mb-3 font-semibold text-cyan-400">
+      PROFESSIONAL WEB DEVELOPMENT SERVICES IN LAHORE
+    </p>
 
-          <h2 className="mb-10 text-4xl font-bold">
-            My Services
-          </h2>
+    <h2 className="mb-5 text-4xl font-bold">
+      Web Development Services
+    </h2>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="rounded-2xl border border-slate-700 bg-slate-950 p-8 transition hover:-translate-y-2 hover:border-cyan-400"
-              >
-                <div className="mb-5 text-3xl text-cyan-400">
-                  {service.icon}
-                </div>
+    <p className="mb-10 max-w-3xl leading-8 text-slate-400">
+      Looking for a web developer in Shahdra, Lahore?
+      I provide modern website design and custom web
+      development services for individuals, startups,
+      and businesses. My focus is on building responsive,
+      user-friendly, and professional websites.
+    </p>
 
-                <h3 className="text-xl font-semibold">
-                  {service.title}
-                </h3>
-
-                <p className="mt-4 leading-7 text-slate-400">
-                  {service.description}
-                </p>
-              </div>
-            ))}
+    <div className="grid gap-6 md:grid-cols-3">
+      {services.map((service) => (
+        <div
+          key={service.title}
+          className="rounded-2xl border border-slate-700 bg-slate-950 p-8 transition hover:-translate-y-2 hover:border-cyan-400"
+        >
+          <div className="mb-5 text-3xl text-cyan-400">
+            {service.icon}
           </div>
+
+          <h3 className="text-xl font-semibold">
+            {service.title}
+          </h3>
+
+          <p className="mt-4 leading-7 text-slate-400">
+            {service.description}
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Projects Section */}
      <Projects projects={projects} />
 
       {/* Contact Section */}
-      <section
-        id="contact"
-        className="relative overflow-hidden bg-[#020b20] px-6 py-20 text-white"
+    
+<section
+  id="contact"
+  aria-labelledby="contact-heading"
+  className="relative overflow-hidden bg-[#020b20] px-6 py-20 text-white"
+>
+  <div className="absolute inset-0 opacity-20">
+    <div className="absolute left-0 top-10 h-72 w-72 rounded-full bg-cyan-500 blur-[120px]" />
+    <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-blue-600 blur-[120px]" />
+  </div>
+
+  <div className="relative mx-auto max-w-6xl">
+    <div className="mb-14 text-center">
+      <p className="mb-4 font-bold tracking-[0.3em] text-cyan-400">
+        GET IN TOUCH
+      </p>
+
+      <h2
+        id="contact-heading"
+        className="text-4xl font-extrabold sm:text-5xl"
       >
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute left-0 top-10 h-72 w-72 rounded-full bg-cyan-500 blur-[120px]" />
-          <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-blue-600 blur-[120px]" />
-        </div>
+        Let's Work <span className="text-cyan-400">Together</span>
+      </h2>
 
-        <div className="relative mx-auto max-w-6xl">
-          <div className="mb-14 text-center">
-            <p className="mb-4 font-bold tracking-[0.3em] text-cyan-400">
-              GET IN TOUCH
-            </p>
+      <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-300">
+        Looking for a professional web developer in Shahdra,
+        Lahore? Let's discuss your project and create a modern,
+        responsive website for your business, school or online store.
+      </p>
+    </div>
 
-            <h2 className="text-4xl font-extrabold sm:text-5xl">
-              Let's Work <span className="text-cyan-400">Together</span>
-            </h2>
+    <div className="grid items-center gap-12 rounded-3xl border border-cyan-500/30 bg-[#071832]/80 p-7 shadow-[0_0_35px_rgba(0,180,255,0.08)] md:grid-cols-2 md:p-12">
+      <div>
+        <h3 className="text-3xl font-bold leading-snug">
+          Let's Build Something
+          <span className="block text-cyan-400">
+            Amazing Together!
+          </span>
+        </h3>
 
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate-300">
-              Have a project in mind or looking for a passionate developer?
-              Let's connect and create something amazing together.
-            </p>
-          </div>
+        <p className="mt-6 leading-8 text-slate-300">
+          I am Malaika Mohsin, a Full-Stack Web Developer based
+          in Shahdra, Lahore, Pakistan. I specialize in business
+          websites, school websites, e-commerce websites and
+          custom web development using React.js, Next.js,
+          Laravel, Node.js, Express.js and MongoDB.
+        </p>
 
-          <div className="grid items-center gap-12 rounded-3xl border border-cyan-500/30 bg-[#071832]/80 p-7 shadow-[0_0_35px_rgba(0,180,255,0.08)] md:grid-cols-2 md:p-12">
-            <div>
-              <h3 className="text-3xl font-bold leading-snug">
-                Let's Build Something
-                <span className="block text-cyan-400">Amazing Together!</span>
-              </h3>
+        <div className="mt-8 space-y-4">
+          <div className="flex items-center gap-4 rounded-2xl border border-cyan-500/30 bg-cyan-500/5 p-5">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cyan-500/15 text-2xl text-cyan-400">
+              ✉
+            </div>
 
-              <p className="mt-6 leading-8 text-slate-300">
-                I am a passionate Full-Stack Web Developer specializing in
-                modern, responsive and user-friendly web applications.
-                I work with HTML, CSS, JavaScript, React.js, Next.js,
-                Node.js, Express.js, Laravel and MongoDB.
-              </p>
-
-              <div className="mt-8 flex items-center gap-4 rounded-2xl border border-cyan-500/30 bg-cyan-500/5 p-5">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cyan-500/15 text-2xl text-cyan-400">
-                  ✉
-                </div>
-
-                <div className="min-w-0">
-                  <p className="text-sm text-slate-400">Email Address</p>
-                  <a
-                    href="mailto:malikashoukat777@gmail.com"
-                    className="break-all font-semibold text-white transition hover:text-cyan-400"
-                  >
-                    malikashoukat777@gmail.com
-                  </a>
-                </div>
-              </div>
-
+            <div className="min-w-0">
+              <p className="text-sm text-slate-400">Email Address</p>
               <a
-                href="mailto:malikashoukat777@gmail.com?subject=Project%20Inquiry"
-                className="mt-8 inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 px-8 py-4 font-bold text-[#020b20] shadow-lg shadow-cyan-500/20 transition duration-300 hover:-translate-y-1 hover:shadow-cyan-500/40"
+                href="mailto:malikashoukat777@gmail.com"
+                className="break-all font-semibold text-white transition hover:text-cyan-400"
               >
-                <span>Send Me an Email</span>
-                <span className="text-xl">→</span>
+                malikashoukat777@gmail.com
               </a>
             </div>
+          </div>
 
-            <div className="flex justify-center">
-              <div className="relative w-full max-w-md overflow-hidden rounded-3xl border border-cyan-400/30 shadow-[0_0_30px_rgba(0,200,255,0.15)]">
-                <img
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=85"
-                  alt="Developer working on a computer"
-                  className="h-[320px] w-full object-cover"
-                />
+          <div className="flex items-center gap-4 rounded-2xl border border-green-500/30 bg-green-500/5 p-5">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-green-500/15 text-2xl text-green-400">
+              ☎
+            </div>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-[#020b20] via-transparent to-transparent" />
+            <div className="min-w-0">
+              <p className="text-sm text-slate-400">WhatsApp</p>
+              <a
+                href="https://wa.me/923281717213"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-white transition hover:text-green-400"
+              >
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
 
-                <div className="absolute bottom-6 left-6">
-                  <p className="text-2xl font-bold text-white">
-                    Let's Connect!
-                  </p>
-                  <p className="mt-2 text-sm text-cyan-300">
-                    Turning ideas into digital experiences.
-                  </p>
-                </div>
-              </div>
+          <div className="flex items-center gap-4 rounded-2xl border border-cyan-500/30 bg-cyan-500/5 p-5">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-cyan-500/15 text-2xl text-cyan-400">
+              📍
+            </div>
+
+            <div>
+              <p className="text-sm text-slate-400">Service Location</p>
+              <p className="font-semibold text-white">
+                Shahdra, Lahore, Pakistan
+              </p>
             </div>
           </div>
         </div>
-      </section>
+
+        <div className="mt-8 flex flex-wrap gap-4">
+          <a
+            href="mailto:malikashoukat777@gmail.com?subject=Project%20Inquiry"
+            className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 px-8 py-4 font-bold text-[#020b20] shadow-lg shadow-cyan-500/20 transition duration-300 hover:-translate-y-1 hover:shadow-cyan-500/40"
+          >
+            Send Me an Email →
+          </a>
+
+          <a
+            href="https://wa.me/923281717213"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 rounded-xl border border-green-400 px-8 py-4 font-bold text-green-400 transition hover:bg-green-400 hover:text-slate-950"
+          >
+            WhatsApp Me
+          </a>
+        </div>
+      </div>
+
+      <div className="flex justify-center">
+        <div className="relative w-full max-w-md overflow-hidden rounded-3xl border border-cyan-400/30 shadow-[0_0_30px_rgba(0,200,255,0.15)]">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=85"
+            alt="Web developer working on website development"
+            className="h-[320px] w-full object-cover"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-[#020b20] via-transparent to-transparent" />
+
+          <div className="absolute bottom-6 left-6">
+            <p className="text-2xl font-bold text-white">
+              Let's Connect!
+            </p>
+            <p className="mt-2 text-sm text-cyan-300">
+              Turning ideas into digital experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* WhatsApp Floating Button */}
       <a

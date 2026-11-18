@@ -37,21 +37,34 @@ export default function Projects({ projects }: ProjectsProps) {
   return (
     <section
       id="projects"
+      aria-labelledby="projects-heading"
       className="mx-auto max-w-6xl px-6 py-24"
     >
       <p className="mb-3 font-semibold text-cyan-400">
-        MY PORTFOLIO
+        WEB DEVELOPMENT PORTFOLIO
       </p>
 
-      <h2 className="mb-8 text-4xl font-bold">
-        Recent Projects
+      <h2
+        id="projects-heading"
+        className="mb-4 text-4xl font-bold"
+      >
+        Website Development Projects
       </h2>
+
+      <p className="mb-10 max-w-3xl leading-7 text-slate-400">
+        Explore my recent web development projects, including
+        business websites, school websites, and e-commerce
+        solutions built using Next.js, React, Laravel, and
+        modern web technologies.
+      </p>
 
       <div className="mb-10 flex flex-wrap gap-3">
         {categories.map((category) => (
           <button
             key={category}
+            type="button"
             onClick={() => setActiveFilter(category)}
+            aria-pressed={activeFilter === category}
             className={`rounded-full border px-5 py-2.5 text-sm font-semibold transition duration-300 ${
               activeFilter === category
                 ? "border-cyan-400 bg-cyan-400 text-slate-950"
@@ -66,12 +79,15 @@ export default function Projects({ projects }: ProjectsProps) {
       <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
-            <div
+            <article
               key={project.name}
               className="flex flex-col rounded-2xl border border-slate-800 bg-slate-900 p-7 transition hover:-translate-y-2 hover:border-cyan-400"
             >
               <div className="mb-5 flex items-center justify-between">
-                <span className="text-3xl text-cyan-400">
+                <span
+                  aria-hidden="true"
+                  className="text-3xl text-cyan-400"
+                >
                   ✧
                 </span>
 
@@ -95,12 +111,13 @@ export default function Projects({ projects }: ProjectsProps) {
               <a
                 href={project.link}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label={`View ${project.name} live website`}
                 className="mt-6 inline-block font-semibold transition hover:text-cyan-400"
               >
                 View Live Project →
               </a>
-            </div>
+            </article>
           ))
         ) : (
           <p className="col-span-full py-10 text-center text-slate-400">
