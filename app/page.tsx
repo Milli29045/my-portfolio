@@ -275,7 +275,7 @@ export default function Home() {
           <div className="relative flex flex-col items-center">
             <div className="relative flex h-[260px] w-[260px] items-center justify-center rounded-full border-[5px] border-cyan-400 shadow-[0_0_35px_#00cfff] sm:h-[380px] sm:w-[380px] overflow-hidden group">
               <img
-                src="/profile.png"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjQmKuN1IrwUysBoYgl7kr5-hwmlQY4HWzjkYRzql6Vw&s=10"
                 alt="Malaika Mohsin"
                 className="h-full w-full rounded-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
